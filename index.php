@@ -5,7 +5,7 @@ require_once __DIR__ . '/classes/movie.php';
 $joker1 = new Movie(
     'Joker',
     'Warner Bros',
-    ['Drammatico', 'Thriller Psicologico',],
+    ['Drammatico', 'Thriller Psicologico'],
     2019,
     9
 );
@@ -26,7 +26,15 @@ $paperino = new Movie(
     4
 );
 
-$movies = [$joker1, $joker2, $paperino];
+$highSchoolMusical = new Movie(
+    'High School Musical',
+    'Disney',
+    ['Musical', 'Teen Drama'],
+    2006,
+    10
+);
+
+$movies = [$joker1, $joker2, $paperino, $highSchoolMusical];
 
 ?>
 
